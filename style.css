@@ -38,7 +38,10 @@ body {
   border-radius: 0 8px 8px 0;
   cursor: pointer;
 }
-
+#refresh {
+  border-radius: 8px;
+  margin-right: 0.5rem;
+}
 .settings {
   text-align: left;
   margin-bottom: 1rem;

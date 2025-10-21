@@ -8,9 +8,11 @@ const numberEl = document.getElementById("numbers");
 const symbolEl = document.getElementById("symbols");
 const lengthValue = document.getElementById("lenghtvalue");
 lengthValue.textContent = lengthEl.value;
+const refreshBtn = document.getElementById("refresh");
 
 lengthEl.addEventListener("input", () => {
   lengthValue.textContent = lengthEl.value;
+  generatePassword();
 });
 
 const upperChars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
@@ -38,6 +40,7 @@ function generatePassword() {
 }
 
 generateBtn.addEventListener("click", generatePassword);
+refreshBtn.addEventListener("click", generatePassword);
 
 copyBtn.addEventListener("click", () => {
   if (passwordInput.value) {
@@ -46,3 +49,4 @@ copyBtn.addEventListener("click", () => {
     setTimeout(() => (copyBtn.textContent = "📋 Copy"), 1500);
   }
 });
+generatePassword();
