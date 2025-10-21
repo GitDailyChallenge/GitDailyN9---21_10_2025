@@ -1,0 +1,66 @@
+body {
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #1a1a2e, #16213e);
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 2rem;
+  border-radius: 12px;
+  width: 320px;
+  text-align: center;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+.password-box {
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+.password-box input {
+  flex: 1;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 8px 0 0 8px;
+}
+
+.password-box button {
+  padding: 0.5rem 0.8rem;
+  border: none;
+  background: #e94560;
+  color: white;
+  border-radius: 0 8px 8px 0;
+  cursor: pointer;
+}
+
+.settings {
+  text-align: left;
+  margin-bottom: 1rem;
+}
+
+button#generate {
+  background: #0f3460;
+  border: none;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button#generate:hover {
+  background: #e94560;
+}
+
+#curseurdisplay {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
